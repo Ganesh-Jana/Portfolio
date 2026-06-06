@@ -85,27 +85,27 @@ export interface Certification {
 
 export const certifications: Certification[] = [
   {
-    name: "Google Generative AI Learning Path",
-    org: "Google Cloud",
-    date: "Oct 2024",
-    link: "https://cloudskillsboost.google",
-    credentialId: "GCP-GAI-2024",
+    name: "IBM SkillsBuild in Advanced IT Skills",
+    org: "IBM",
+    date: "Mar 2026",
+    link: "https://drive.google.com/file/d/1MFZgBMRguxdIxbJNv3G-8q7j14zdp9eD/view?usp=sharing",
+    credentialId: "",
     color: "#4285F4"
   },
   {
-    name: "Java Programming Masterclass",
-    org: "Udemy",
-    date: "Jul 2024",
-    link: "https://udemy.com",
-    credentialId: "UC-JAVA-2024",
+    name: "Full Stack Developer",
+    org: "SimpleLearn",
+    date: "Jun 2025",
+    link: "https://drive.google.com/file/d/1Azec8OWjPRvH9OanGSOPb0kP8tvcOq0i/view?usp=sharing",
+    credentialId: "",
     color: "#EC4899"
   },
   {
-    name: "The Complete Web Developer Bootcamp",
-    org: "Udemy",
-    date: "Mar 2024",
-    link: "https://udemy.com",
-    credentialId: "UC-WEB-2024",
+    name: "ADVANCE JAVA",
+    org: "WEBFLEX COMSULTANCY SERVICES PVT. LTD.",
+    date: "Sep 2024",
+    link: "https://drive.google.com/file/d/1Sw3cUsgM1Z0iwDE6dCSuhh90dt7FWZ6U/view?usp=sharing",
+    credentialId: "",
     color: "#F59E0B"
   },
   {
