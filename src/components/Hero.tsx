@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { FiGithub, FiLinkedin, FiTwitter, FiMail, FiArrowDown } from 'react-icons/fi';
-import { HiDownload } from 'react-icons/hi';
-import { siLeetcode } from 'simple-icons';
+import { FiGithub, FiLinkedin, FiMail, FiArrowDown } from 'react-icons/fi';
+
+
 import { SiLeetcode } from 'react-icons/si';
 
 const ROLES = ['Full Stack Developer','Java Developer','AI Enthusiast','Problem Solver','Open Source Contributor'];
@@ -39,7 +39,7 @@ function Typer({ texts }: { texts: string[] }) {
 const SOCIALS = [
   { icon: FiGithub,   href: 'https://github.com/Ganesh-Jana',            label: 'GitHub'   },
   { icon: FiLinkedin, href: 'https://www.linkedin.com/in/ganesh-chandra-jana-07a86a269/',          label: 'LinkedIn' },
-  { icon: SiLeetcode,  href: 'https://leetcode.com/u/Ganesh_Jana/',           label: 'Twitter'  },
+  { icon: SiLeetcode,  href: 'https://leetcode.com/u/Ganesh_Jana/',           label: 'LeetCode'  },
   { icon: FiMail,     href: 'mailto:janaganesh810@email.com', label: 'Email'    },
 ];
 

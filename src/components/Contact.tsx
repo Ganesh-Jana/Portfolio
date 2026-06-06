@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FiMail, FiMapPin, FiGithub, FiLinkedin, FiSend, FiArrowRight } from 'react-icons/fi';
 
+const WEB3FORMS_KEY = '422c92dd-05bf-4170-a2c5-09912b268f0a'; // paste your key here
+
 const INFO = [
   { icon:FiMail,     label:'Email',    value:'janaganesh810@gmail.com',    href:'mailto:janaganesh810@gmail.com', color:'#818CF8' },
   { icon:FiMapPin,   label:'Location', value:'Durgapur, West Bengal, IN', href:'#', color:'#F472B6' },
@@ -27,11 +29,25 @@ export default function Contact() {
     if (!form.name || !form.email || !form.message) return;
     setStatus('sending');
     try {
-      // await emailjs.send('SVC_ID','TPL_ID', form, 'PUB_KEY');
-      await new Promise(r => setTimeout(r, 1200));
-      setStatus('ok');
-      setForm({ name:'', email:'', subject:'', message:'' });
-      setTimeout(() => setStatus('idle'), 5000);
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method:'POST', headers:{ 'Content-Type':'application/json' },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_KEY,
+          ...form,
+          name: form.name,
+          email: form.email,
+          subject: form.subject || 'New Contact Form Submission',
+          message: form.message,
+        }),
+      });
+      const data = await res.json();
+      if (data.success) {
+        setStatus('ok');
+        setForm({ name:'', email:'', subject:'', message:'' });
+        setTimeout(() => setStatus('idle'), 5000);
+      } else {
+        throw new Error(data.message || 'Failed to send message');
+      }
     } catch {
       setStatus('err');
       setTimeout(() => setStatus('idle'), 5000);
