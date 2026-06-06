@@ -109,11 +109,43 @@ export const certifications: Certification[] = [
     color: "#F59E0B"
   },
   {
-    name: "AWS Cloud Practitioner Essentials",
-    org: "Amazon Web Services",
-    date: "Dec 2023",
-    link: "https://aws.amazon.com",
-    credentialId: "AWS-CPE-2023",
-    color: "#FF9900"
+    name: "Software Engineering Job Simulation",
+    org: "JPMorgan Chase & Co. – Forage",
+    date: "May 2026",
+    link: "https://drive.google.com/file/d/1UnxJBC-noxck0M8SeugNq6VjE1jDXXUL/view?usp=sharing",
+    credentialId: "",
+    color: "#FF1493"
+  },
+  {
+    name: "Spring Security with OAuth2 and JWT | Spring Boot",
+    org: "Udemy",
+    date: "May 2026",
+    link: "https://drive.google.com/file/d/1XI1BJaytj01q5Jshy8Td6W1C0LqPW0Pa/view?usp=sharing",
+    credentialId: "",
+    color: "#32CD32"
+  },
+  {
+    name: "Get Started with SQL Analytics and BI",
+    org: "SimpleLearn | SkillUP",
+    date: "Sep 2025",
+    link: "https://drive.google.com/file/d/1xM_dKCbnbja0LU4bi1LnHjChhrQG6EV8/view?usp=sharing",
+    credentialId: "",
+    color: "#9370DB"
+  },
+  {
+    name: "Hands on React JS",
+    org: "Udemy",
+    date: "Apr 2025",
+    link: "https://drive.google.com/file/d/1fb-Mbp7BZ9853TG6_XM9xK2iY3CFKv3h/view?usp=sharing",
+    credentialId: "",
+    color: "#FF4500"
+  },
+  {
+    name: "Placement Preparation Programme",
+    org: "IIT BOMBAY",
+    date: "Apr 2025",
+    link: "https://drive.google.com/file/d/1mqXsPL1TVQLKH7kBZbxV1y-Y-CXlKzjC/view?usp=sharing",
+    credentialId: "",
+    color: "#D2691E"
   }
 ];
