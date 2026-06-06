@@ -56,7 +56,7 @@ export default function Footer() {
 
         <div style={{ paddingTop:24, borderTop:'1px solid rgba(255,255,255,0.05)', display:'flex', alignItems:'center', justifyContent:'space-between' }}>
           <p style={{ color:'#334155', fontSize:13 }}>
-            © {new Date().getFullYear()} Arjun Sharma · Built with React + Vite + Tailwind
+            © {new Date().getFullYear()} Ganesh Jana · Built with React + Vite + Tailwind
           </p>
           <motion.button whileHover={{ scale:1.1, y:-2 }} onClick={() => window.scrollTo({ top:0, behavior:'smooth' })}
             style={{ width:36, height:36, borderRadius:10, display:'flex', alignItems:'center', justifyContent:'center',
